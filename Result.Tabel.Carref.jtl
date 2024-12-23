@@ -1,0 +1,27 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1734969899760,494,POST - Login (Login VALIDO 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,723,229,1,1,https://serverest.dev/login,482,0,307
+1734969900259,158,POST - Login (Login INVALIDO 401 OK),401,Unauthorized,Testes (01 Execução) 1-1,text,false,,511,229,1,1,https://serverest.dev/login,158,0,0
+1734969900420,652,GET - Listar Usuarios (STRINGS Vazias_Adm TRUE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,288592,217,1,1,https://serverest.dev/usuarios?administrador=true,165,0,0
+1734969901072,169,GET - Listar Usuarios (STRINGS Vazias_Adm FALSE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,30847,199,1,1,https://serverest.dev/usuarios?administrador=false,160,0,0
+1734969901242,291,GET - Listar Usuarios (STRINGS_ADM Vazios - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,318934,204,1,1,https://serverest.dev/usuarios,168,0,0
+1734969901534,159,GET - Listar Usuarios (ID Valido_ADM TRUE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,222,1,1,https://serverest.dev/usuarios?_id=05GH8Tqcv7lw1yPO&administrador=true,159,0,0
+1734969901695,157,GET - Listar Usuarios (ID Valido_ADM FALSE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,230,1,1,https://serverest.dev/usuarios?_id=7yKZ91kUpulq5v5K&administrador=false,157,0,0
+1734969901853,157,GET - Listar Usuarios (ID Valido_ADM Vazio - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,210,1,1,https://serverest.dev/usuarios?_id=7yKZ91kUpulq5v5K,157,0,0
+1734969902011,211,GET - Listar Usuarios (NOME Valido_ADM TRUE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,142439,217,1,1,https://serverest.dev/usuarios?nome=ana&administrador=true,167,0,0
+1734969902223,170,GET - Listar Usuarios (NOME Valido_ADM FALSE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,218,1,1,https://serverest.dev/usuarios?nome=usu&administrador=false,170,0,0
+1734969902396,161,GET - Listar Usuarios (NOME Valido_ADM Vazio - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,1125,199,1,1,https://serverest.dev/usuarios?nome=fula,161,0,0
+1734969902558,156,GET - Listar Usuarios (EMAIL Valido_ADM TRUE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,240,1,1,https://serverest.dev/usuarios?email=Assunta_Moore@hotmail.com&administrador=true,156,0,0
+1734969902715,158,GET - Listar Usuarios (EMAIL Valido_ADM FALSE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,239,1,1,https://serverest.dev/usuarios?email=agnesschneider@test.com&administrador=false,158,0,0
+1734969902874,165,GET - Listar Usuarios (EMAIL Valido_ADM Vazio - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,218,1,1,https://serverest.dev/usuarios?email=irvinmosciski@test.com,165,0,0
+1734969903040,207,GET - Listar Usuarios (PASSWORD Valido_ADM TRUE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,144106,223,1,1,https://serverest.dev/usuarios?password=teste&administrador=true,163,0,0
+1734969903248,160,GET - Listar Usuarios (PASSWORD Valido_ADM FALSE - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,496,224,1,1,https://serverest.dev/usuarios?password=senha&administrador=false,160,0,0
+1734969903409,200,GET - Listar Usuarios (PASSWORD Valido_ADM Vazio - Lista Usuarios 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,144771,202,1,1,https://serverest.dev/usuarios?password=123,160,0,0
+1734969903610,160,POST - Cadastra Usuario Random (Cadastro 200 OK),201,Created,Testes (01 Execução) 1-1,text,true,,540,292,1,1,https://serverest.dev/usuarios,160,0,0
+1734969903771,155,POST - Cadastra Usuario (Cadastro Email em Uso 400 OK),400,Bad Request,Testes (01 Execução) 1-1,text,false,,515,295,1,1,https://serverest.dev/usuarios,155,0,0
+1734969903927,155,GET - Buscar Usuario ID (ID Valido - Usuario Encontrado 200 OK),200,OK,Testes (01 Execução) 1-1,text,true,,707,210,1,1,https://serverest.dev/usuarios?_id=0uxuPY0cbmQhpEz1,155,0,0
+1734969904083,154,GET - Buscar Usuario ID (ID Invalido - Usuario Nao Encontrado 400 OK ),400,Bad Request,Testes (01 Execução) 1-1,text,false,,507,133,1,1,https://serverest.dev/usuarios/FGHFGH,154,0,0
+1734969904240,165,DELETE - Excluir Usuario (ID Valido - Registro Excluido 200 OK),405,Method Not Allowed,Testes (01 Execução) 1-1,text,false,,620,239,1,1,https://serverest.dev/usuarios/,165,0,0
+1734969904406,156,DELETE - Excluir Usuario (ID Valido - Nao e possivel Excluir 405),405,Method Not Allowed,Testes (01 Execução) 1-1,text,false,,620,239,1,1,https://serverest.dev/usuarios/,156,0,0
+1734969904587,203,PUT - Editar Usuario (ID Valido_EMAIL Alterado - Registro Alterado com Sucesso 200 OK),201,Created,Testes (01 Execução) 1-1,text,true,,540,342,1,1,https://serverest.dev/usuarios/0kavRt6A29s8trrS,203,0,0
+1734969904790,175,PUT - Editar Usuario (ID Valido_EMAIL Alterado - Novo Cadastro Realizado 201 OK),201,Created,Testes (01 Execução) 1-1,text,true,,540,339,1,1,https://serverest.dev/usuarios/07txVl9hvoY2dxNk,175,0,0
+1734969904967,159,PUT - Editar Usuario (ID Valido_STRINGS Alteradas_EMAIL Existente - Email Ja Cadastrado 400 OK),400,Bad Request,Testes (01 Execução) 1-1,text,false,,515,338,1,1,https://serverest.dev/usuarios/2mikXbSZ3LJAJQEL,159,0,0
